@@ -1,0 +1,10 @@
+<h1>Shopping Shopping</h1>
+<app-list (addListEvent)="addItem($event)"></app-list>
+<h2>Shopping List</h2>
+<div id="list">
+  <ul>
+    <li *ngFor="let item of itemList">
+      {{ item }} <button (click)="onDeleteButton(item)">Delete</button>
+    </li>
+  </ul>
+</div>

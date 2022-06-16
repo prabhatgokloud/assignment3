@@ -1,0 +1,44 @@
+<h2>Shopping Items</h2>
+<div>
+  Books
+  <input
+    type="checkbox"
+    id="Books"
+    value="Books"
+    #books
+    (click)="addItem(books.value)"
+  /><br />
+  Pens
+  <input
+    type="checkbox"
+    id="Pens"
+    value="Pens"
+    #pens
+    (click)="addItem(pens.value)"
+  /><br />
+  T-shirt
+  <input
+    type="checkbox"
+    id="T-shirt"
+    value="T-shirt"
+    #tshirt
+    (click)="addItem(tshirt.value)"
+  /><br />
+  Shoes
+  <input
+    type="checkbox"
+    id="Shoes"
+    value="Shoes"
+    #shoes
+    (click)="addItem(shoes.value)"
+  /><br />
+  Grocerries
+  <input
+    type="checkbox"
+    id="Grocerries"
+    value="Grocerries"
+    #grocerries
+    (click)="addItem(grocerries.value)"
+  />
+  <button (click)="onAddItems()">Add Items</button>
+</div>
